@@ -1,7 +1,7 @@
 const searchInput = document.querySelector('#search');
 
 document.querySelector("input[type='submit']")
-.addEventListener('click',main);
+.addEventListener('click',main); //pressing enter on search input works too nice
 
 function main(){
     const city = searchInput.value;
@@ -44,6 +44,7 @@ const displayData = data =>{
             e.classList.remove('changeStart');
         }),250);
     },150);
+    //timeouts in order for tansition to work well with displaying this shit
 };
 
 const capitalize = (str) => {
