@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <script src='index.js' defer></script>
+    <link rel='stylesheet' href="style.css">
 </head>
 <body>
-    <form action='#'>
-        <input type="text" id="search" placeholder="City">
-        <input type='submit' value="Search">
-    </form>
+    <div class="display">
+        <form action='#'>
+            <input type="text" id="search" placeholder="City" value='Szczecin'>
+            <input type='submit'>
+        </form>
+        <span class="weather-type" data-weathertype>Overcast clouds</span>
+        <div class="cards">
+            <div class="card">
+                <span class="info-header">Temperature</span>
+                <span class="info" data-temp>7°C</span>
+            </div>
+            <div class="card">
+                <span class="info-header">Humidity</span>
+                <span class="info" data-humidity>83%</span>
+            </div>
+            <div class="card">
+                <span class="info-header">Wind</span>
+                <span class="info" data-wind>6.7 ms/s</span>
+            </div>
+            <div class="card">
+                <span class="info-header">Pressure</span>
+                <span class="info" data-pressure>1004 hPa</span>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
