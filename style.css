@@ -38,7 +38,7 @@ body{
     transform: scale(1.1);
 }
 #search.error{
-    color: #c74141 !important; 
+    color: #c74141 ; 
 }
 input[type='submit']{
     display: none;

@@ -29,6 +29,8 @@ const weathertype = document.querySelector('span[data-weathertype]');
 const infoArr = [tempdiv, humdiv, pressurediv,winddiv,weathertype];
 
 const displayData = data =>{
+    searchInput.value = data.name;
+
     infoArr.forEach(e=>{
         e.classList.add('changeStart');
     });
