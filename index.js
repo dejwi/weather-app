@@ -1,7 +1,7 @@
 const searchInput = document.querySelector('#search');
 
-document.querySelector("input[type='submit']")
-.addEventListener('click',main); //pressing enter on search input works too nice
+document.querySelector("form")
+.addEventListener('submit',main); //pressing enter on search input works too nice
 
 function main(){
     const city = searchInput.value;
